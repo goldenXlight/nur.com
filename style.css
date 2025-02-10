@@ -1,0 +1,172 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #a20808, #e6e6e6);
+    min-height: 100vh;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #de2f43;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Main Content Area */
+main {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+p.nv2 {
+    font-size: 120%;
+    margin: 60px 70px;
+    color: #555;
+    line-height: 1.8;
+    border: 1px;
+    border-style: dotted;
+    border-color: black;
+    width: 700px; 
+    left: 50px;
+}
+
+
+
+
+/* Custom Image Styling */
+.custom-image-1 {
+    position: absolute; /* Allows precise placement */
+    top: 46px; /* Distance from the top of the viewport */
+    left: 35px; /* Distance from the left of the viewport */
+    width: 300px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    /*border: 2px solid #333; /* Optional: Add a border for better visibility */
+    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
+.custom-image-2 {
+    position: absolute; /* Allows precise placement */
+    top: 36px; /* Distance from the top of the viewport */
+    right: 25px; /* Distance from the left of the viewport */
+    width: 200px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    /*border: 2px solid #333; /* Optional: Add a border for better visibility */
+    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
+.custom-image-3 {
+    position: absolute; /* Allows precise placement */
+    top: 256px; /* Distance from the top of the viewport */
+    left: 1130px; /* Distance from the left of the viewport */
+    width: 400px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    /*border: 2px solid #333; /* Optional: Add a border for better visibility */
+    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
